@@ -124,7 +124,7 @@ const handlePieClick = (data) => {
         {/* Table */}
         <Grid item xs={12} md={6} sx={{ minWidth: '49%' }}>
             <Typography variant="h6" sx={{ mb: 2 }}>
-              {selectedRegion ? `Sales Details – ${selectedRegion}` : 'Click sobre un departamento'}
+              {selectedRegion ? `Detalle venta – ${selectedRegion}` : 'Click sobre un departamento'}
             </Typography>
 
             {selectedRegion && salesDataByRegion[selectedRegion] ? (
@@ -132,8 +132,8 @@ const handlePieClick = (data) => {
                 <Table size="small" stickyHeader>
                   <TableHead>
                     <TableRow>
-                      <TableCell><strong>Product</strong></TableCell>
-                      <TableCell><strong>Amount ($)</strong></TableCell>
+                      <TableCell><strong>Producto</strong></TableCell>
+                      <TableCell><strong>Cantidad</strong></TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
